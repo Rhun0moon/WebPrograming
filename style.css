@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%; height: 100%;
+}
+.main{
+    width: 100%; height: 100%;
+    background: lightblue;
+}
+.container{
+    position: absolute; /* 문서 상에 요소를 배치하는 방법을 지정 중 부모 요소를 기준으로 배치 */
+    top: 10%; left: 25%; /* 시작위치*/
+    width: 50%; height: 70%; /* 상자크기*/
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /*수평 정렬*/
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 50%; height: 100%;
+}
+.img{
+    height: 100%;
+    background-size : cover;
+}
+.img1{ background-image: url('./img/background.png'); }
+.img2{ background-image: url('./img/img2.png');}
+
+.right{width: 50%; height: 100%;}
+.right>p{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: larger;
+    font-family: 'NanumSquareRound';
+}
+.right>form>ul{list-style:none; margin: 0; padding: 0;}
+.right>form>ul>li{
+    text-align: center;
+    margin-top: 20px;
+}
+.right>form>ul>li>input {
+    width: 70%;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    border: 0; border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-family: 'NanumSquareRound';
+}
+.right>form>ul>li>button {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: #6aafe6;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+}
